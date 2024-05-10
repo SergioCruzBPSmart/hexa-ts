@@ -1,11 +1,11 @@
-import { User } from "../../../../src/users/domain/user";
-import { InMemoryUserRepository } from "../../../../src/users/infrastructure/user-repository/in-memory-user-repository";
+import { User } from "../../../../src/domain/user";
+import { inMemoryUser } from "../../../../src/infrastructure/inMemoryUser";
 
 describe("InMemoryUserRepository", () => {
-  let repository: InMemoryUserRepository;
+  let repository: inMemoryUser;
 
   beforeEach(() => {
-    repository = new InMemoryUserRepository();
+    repository = new inMemoryUser();
   });
 
   describe("getById", () => {
