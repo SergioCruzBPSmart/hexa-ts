@@ -17,7 +17,7 @@ function bootstrap() {
   const { port } = config.server;
 
   app.listen(port, () => {
-    console.log(`[APP] - Starting application on port ${port}`);
+    console.log(`[APP] - Application running on port ${port}`);
   });
 }
 
